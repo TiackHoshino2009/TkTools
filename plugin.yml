@@ -1,0 +1,23 @@
+name: Tktools
+author: Tiack
+version: '1.5.0'
+main: com.tuankadev.tools.TktoolsUpdate
+api-version: '1.21'
+depend: [NBTAPI]
+softdepend: [TuanKadevWorth]
+folia-supported: true
+commands:
+  tools:
+    description: Main command for TktoolsUpdate
+    usage: /tool <give|reload>
+permissions:
+  tktool.admin:
+    default: op
+    children:
+      tktool.command.give: true
+      tktool.command.reload: true
+  tktool.command.give:
+    default: op
+  tktool.command.reload:
+    default: op
+
